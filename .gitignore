@@ -44,3 +44,8 @@ Thumbs.db
 vite.config.*.timestamp*
 
 *.sqlite
+
+nx.json
+package.json
+yarn.lock
+package-lock.json

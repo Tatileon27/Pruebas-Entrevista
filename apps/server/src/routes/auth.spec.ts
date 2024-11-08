@@ -152,7 +152,7 @@ describe('Authentication', () => {
     it('should require both username and password', async () => {
       const response = await request(app).post('/auth/login').send({
         username: 'testuser',
-        // missing password
+        password: 'password123'// missing password
       });
 
       expect(response.status).toBe(422);
