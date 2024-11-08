@@ -2,8 +2,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import request from 'supertest';
 import express from 'express';
 import { Router } from 'express';
-import { userRepository, sessionRepository } from '../database';
-import { appLog, expressPromise } from '../lib';
+import { userRepository, sessionRepository } from '../../database';
+import { appLog, expressPromise } from '../../lib';
 import {
   userRegisterRequestSchema,
   userUpdateRequestSchema,
