@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "files": [],
-  "include": [],
+  "include": ["src/**/*", "jest.config.ts"],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -11,6 +11,12 @@
     }
   ],
   "compilerOptions": {
-    "esModuleInterop": true
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   }
 }

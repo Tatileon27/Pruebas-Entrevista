@@ -6,7 +6,7 @@ import { userRepository, sessionRepository } from '../../database';
 import { appLog, expressPromise } from '../../lib';
 import {
   userRegisterRequestSchema,
-  userUpdateRequestSchema,
+  userUpdateRequestSchema
 } from '@qa-assessment/shared';
 
 const app = express();
